@@ -284,7 +284,7 @@
         </a>
         <a
           class="pill"
-          href="http://angular.dev/tools/dev-tools"
+          href="http://angular.dev/tools/devtools"
           target="_blank"
           rel="noopener"
         >

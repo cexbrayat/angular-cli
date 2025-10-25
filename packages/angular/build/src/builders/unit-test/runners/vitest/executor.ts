@@ -239,7 +239,8 @@ async function generateCoverageOption(
   return {
     enabled: true,
     excludeAfterRemap: true,
-    include: coverage.include,
+    // provide default include if none specified
+    include: coverage.include ?? ['src/**/*.{ts,html}'],
     reportsDirectory: toPosixPath(path.join('coverage', projectName)),
     thresholds: coverage.thresholds,
     watermarks: coverage.watermarks,
